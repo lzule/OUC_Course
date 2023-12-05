@@ -1,5 +1,5 @@
 # 《计算机视觉》
-### file declaration
+### File declaration
 + get_data.py: Rename the image. Since the downloaded dataset contains duplicate image names, use this code to rename the image and divide the used image into a folder for easy labeling using labelimg
 + yolov5/Depose.py: The running code file of the project, just run it directly
 + GUI_Study: This folder contains some of the learning code of the Tkinter library
@@ -26,3 +26,9 @@ However, the weight file for project presentation is retained, located at: yolov
      cd yolov5
 
      python Depose.py
+### Demo video
+Due to the video file is too large, it is stored in Baidu web disk.
+
+Link: https://pan.baidu.com/s/1VA7HZf5bRF9V1sn6_o3PQw?pwd=otsr
+
+password: otsr
