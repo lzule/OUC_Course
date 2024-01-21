@@ -8,6 +8,7 @@ B = 0;   % 用来计算磁感应强度
 r = 0;   % 用来计算磁感应强度
 num = 5; % 用来绘制磁感应强度圈数
 %% 绘制初始目标
+figure(2);
 % 绘制外芯线
 rectangle('Position', [0-R2,0-R2,2*R2,2*R2], 'Curvature', [1 1],'EdgeColor', 'black', 'LineWidth', 2);
 rectangle('Position', [0-R3,0-R3,2*R3,2*R3], 'Curvature', [1 1],'EdgeColor', 'black', 'LineWidth', 2);
@@ -56,6 +57,7 @@ for r = linspace(R3, 2*R3, num)
 end
 hold off
 %% 绘制磁感应强度B与距离r之间的关系
+figure(3)
 plot_r = 0:0.1:1.3*R3;
 plot_r_B = zeros(size(plot_r));
 for i = 1:length(plot_r)
@@ -66,6 +68,7 @@ title('磁感应强度大小与距离r的关系')
 ylabel('磁感应强度大小')
 xlabel('距圆心距离r')
 %% 绘制磁感应强度大小空间分布图
+figure(4)
 [x0, y0] = meshgrid(-1.2*R3:0.01:1.2*R3, -1.2*R3:0.01:1.2*R3);
 z0 = zeros(size(x0));
 for i = 1:length(x0)^2
